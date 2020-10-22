@@ -31,7 +31,6 @@ Please use *rstudio-daki-shiny-template.yaml* file to deploy rstudio-daki on Rah
 
 * *oc process -f rstudio-daki-shiny-template.yaml -p NAME="application-name" -p USERNAME="your-username" -p PASSWORD="your-password" | oc apply -f -*
 
-
 # Deployment of Rstudio image onto notebooks environment
 
 ### Login to CSC Notebooks to set up a group
