@@ -142,7 +142,7 @@ objects:
       type: Git
       git:
         uri: https://github.com/CSCfi/rstudio-daki.git
-        ref: main
+        ref: master
       contextDir: rstudio-daki-shiny
     strategy:
       dockerStrategy:
