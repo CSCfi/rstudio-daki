@@ -5,7 +5,7 @@ Rstudio-daki repository facilitates building of containerised Rstudio applicatio
 
 Current efforts towards these custom images include:
 - [Rstudio for basic learning environment](#Rstudio-for-basic-learning-environment) 
-- [Rstudio for DAKI project](#Rstudio-for-DAKI-project)
+- [Rstudio for DAKI-relevant packages](#Rstudio-for-DAKI-relevant-packages)
 
 Once rstudio image is compatible for deploying in openshift environment, you can then use it to deploy in notebooks environment at CSC. One way to check whether your custom image is compatible with openshift environment is to actually deploy the image successfully in Rahti container cloud at CSC. Please follow the instructions for [deploying a pre-made rstudio image onto notebooks environment](#Deployment-of-Rstudio-image-onto-notebooks-environment)
 
@@ -20,7 +20,7 @@ The following openshift command can be used to deploy rstudio-shiny server on Ra
 * *oc process -f rstudio-shiny-template.yaml -p NAME="application-name" -p USERNAME="your-username" -p PASSWORD="your-password" | oc apply -f -*
 
 
-# Rstudio for DAKI project
+# Rstudio for DAKI-relevant packages
 
 Rstudio docker container for DAKI project (rstudio-daki) includes the latest version of R (v4.0.0), rstudio and required R-packages to help with various data analysis activities in the broad scope of DAKI project. Customised Dockerfile (file name: Dockerfile) which is meant for deploying on Rahti and eventually on notebooks environment is available in *daki-shiny* folder. 
 
