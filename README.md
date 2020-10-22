@@ -7,7 +7,7 @@ Current efforts towards these custom images include:
 - [Rstudio for basic learning environment](#Rstudio-for-basic-learning-environment) 
 - [Rstudio for DAKI project](#Rstudio-for-DAKI-project)
 
-Once rstudio image is compatible for deploying in openshift environment, you can then use it to deploy in notebooks environment. One way to check whether your custom image is compatible with openshift environment is to actually deploy the image successfully in Rahti container cloud at CSC. Please follow the instructions for [deploying a pre-made rstudio image onto notebooks environment](#Deployment-of-Rstudio-image-onto-notebooks-environment)
+Once rstudio image is compatible for deploying in openshift environment, you can then use it to deploy in notebooks environment at CSC. One way to check whether your custom image is compatible with openshift environment is to actually deploy the image successfully in Rahti container cloud at CSC. Please follow the instructions for [deploying a pre-made rstudio image onto notebooks environment](#Deployment-of-Rstudio-image-onto-notebooks-environment)
 
 # Rstudio for basic learning environment 
 Rstudio dockerfile (file name: Dockerfile) for basic data analysis course (rstudio-shiny) includes the latest version of rstudio, R (v4.0.2) and basic R-packages. other dockerfile (file name: *rstudio-rda.dockerfile*) for building (e.g., in cPouta cloud) custom image is also available in *rstudio-shiny* folder.
