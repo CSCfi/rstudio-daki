@@ -38,7 +38,15 @@ objects:
   stringData:
     secret.env: |-
       export PASSWORD=${PASSWORD}
-
+      
+- apiVersion: v1   
+  kind: Secret
+  metadata:
+    name: webhooksecret
+    creationTimestamp:
+  data:
+    WebHookSecretKey: abcxyz
+    
 - apiVersion: v1
   kind: Service
   metadata:
