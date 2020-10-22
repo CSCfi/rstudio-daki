@@ -1,7 +1,7 @@
 
-# Rstudio-openshift applications (Work in progress)
+# Rstudio-daki tools 
 
-Rstudio-openshift applications in this repository facilitate running containerised data analytics tools of Rstudio in CSC's [Rahti container cloud](https://rahti.csc.fi/) and [notebooks environment](https://notebooks.csc.fi/). This repository extends openshift templates developed in one of other [CSC Github repositories](https://github.com/CSCfi/rstudio-openshift) to build customised Rstudio applications. Custom images here are built in docker environment and can be tailored depending on your requirements. Our efforts towards containerised Rstudio custom images here currently include:
+Rstudio-daki repository facilitate running containerised custom Rstudio in CSC's [Rahti container cloud](https://rahti.csc.fi/) and [notebooks environment](https://notebooks.csc.fi/). This repository extends openshift templates developed in one of other [CSC Github repositories](https://github.com/CSCfi/rstudio-openshift) to build customised Rstudio applications. Custom images here are built in docker environment and can be tailored depending on your requirements. Our efforts towards containerised Rstudio custom images here currently include:
 - [Rstudio for DAKI project](#Rstudio-for-DAKI-project)
 - [Rstudio for training environment](#Rstudio-for-training-environment) 
 
