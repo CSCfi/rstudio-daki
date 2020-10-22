@@ -15,7 +15,7 @@ metadata:
     description: Deploys RStudio IDE with Shiny application server. For username use rstudio and your own defined password.
     iconClass: fa fa-bar-chart
     openshift.io/display-name: RStudio
-    openshift.io/documentation-url: https://github.com/CSCfi/rstudio-openshift
+    openshift.io/documentation-url: https://github.com/CSCfi/rstudio-daki
     openshift.io/support-url: https://www.csc.fi/contact-info
     openshift.io/long-description: 
     openshift.io/provider-display-name: CSC
