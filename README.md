@@ -28,7 +28,7 @@ Please use  *rstudio-shiny-template.yaml* template which will use *Dockerfile* a
 
 This basic RStudio docker container was built from the rocker base image:
 ```
-rocker/tidyverse:4.0.2
+rocker/r-ver:4.0.2
 ```
 
 This rstudio comes with shiny server and the number of pre-installed packages as listed below:
@@ -62,7 +62,7 @@ Please use *rstudio-daki-shiny-template.yaml* file to deploy rstudio-daki on Rah
 
 RStudio-daki is customised towards data analysis needs of DAKI project. Base image was built from rocker latest image:
 ```
-rocker/tidyverse:4.0.0
+rocker/r-ver:4.0.0
 ```
 
 This container also comes with shiny server and the [large number of pre-installed packages](https://github.com/CSCfi/rstudio-daki/blob/master/rstudio-daki-shiny/install_daki.sh) including the following rstudio package managers:
