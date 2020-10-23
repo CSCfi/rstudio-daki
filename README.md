@@ -84,7 +84,7 @@ helsinki
 openthl
 geofi
 ```
-Special thanks to rOpenGov and people behind it for providing analytics tools and datasets in the form of R packages.
+Special thanks to rOpenGov and people behind it for making analytics tools and datasets available in the form of R packages.
 
 # Automate Deployment with Webhook triggers
 
