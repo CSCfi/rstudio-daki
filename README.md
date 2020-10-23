@@ -24,7 +24,7 @@ Please use  *rstudio-shiny-template.yaml* template which will use *Dockerfile* a
 
 * *oc process -f rstudio-shiny-template.yaml -p NAME="application-name" -p USERNAME="your-username" -p PASSWORD="your-password" | oc apply -f -*
 
-### Contents of basic RStudio:
+### Contents of basic RStudio
 
 This basic RStudio docker container was built from the rocker base image:
 ```
@@ -58,7 +58,7 @@ Please use *rstudio-daki-shiny-template.yaml* file to deploy rstudio-daki on Rah
 
 * *oc process -f rstudio-daki-shiny-template.yaml -p NAME="application-name" -p USERNAME="your-username" -p PASSWORD="your-password" | oc apply -f -*
 
-### Contents of RStudio-daki:
+### Contents of RStudio-daki
 
 RStudio-daki is customised towards data analysis needs of DAKI project. Base image was built from rocker latest image:
 ```
