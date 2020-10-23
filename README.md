@@ -1,11 +1,14 @@
 
 #                                                  Rstudio-daki tools 
 
-Rstudio-daki repository help us build a containerised Rstudio application for DAKI relavant data analytics activities as well as facilitates the deployment of the the application in CSC's [Rahti container cloud](https://rahti.csc.fi/) and [notebooks environment](https://notebooks.csc.fi/). In the process of containerisation and deployment, this repository extends openshift templates developed in one of other [CSC Github repositories](https://github.com/CSCfi/rstudio-openshift) to build customised Rstudio applications. Custom Rstudio images are built here in docker environment and can be tailored for similar needs. 
+Rstudio-daki repository help us build a containerised Rstudio application for DAKI relavant data analytics activities as well as facilitates the deployment of the application in CSC's [Rahti container cloud](https://rahti.csc.fi/) and [notebooks environment](https://notebooks.csc.fi/). In the process of containerisation and deployment of this tools, this repository extends openshift templates developed in one of other [CSC Github repositories](https://github.com/CSCfi/rstudio-openshift). Here, custom Rstudio images are built in docker environment. 
 
 Current efforts towards these custom images include:
 - [Rstudio for basic learning environment](#Rstudio-for-basic-learning-environment) 
 - [Rstudio for DAKI-specific use](#Rstudio-for-DAKI-specific-use)
+- [deploying a pre-made rstudio image onto notebooks environment](#Deployment-of-Rstudio-image-onto-notebooks-environment)
+- [Useful CSC resources](#useful-CSC-resources)
+- [Funding](#Funding)
 
 Once rstudio image is compatible for deploying in openshift environment, you can then use it to deploy in notebooks environment at CSC. One way to check whether your custom image is compatible with openshift environment is to actually deploy the image successfully in Rahti container cloud at CSC. Please follow the instructions for [deploying a pre-made rstudio image onto notebooks environment](#Deployment-of-Rstudio-image-onto-notebooks-environment)
 
