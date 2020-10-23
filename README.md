@@ -34,17 +34,17 @@ rocker/tidyverse:4.0.2
 This container comes with shiny server and the number pre-installed packages as below:
 
 ```
-    tidyverse
-    corrplot 
-    RColorBrewer 
-    openxlsx 
-    readxl 
-    gridExtra 
-    ggfortify 
-    data.table 
-    dbplyr 
-    RSQLite 
-    BiocManager 
+tidyverse
+corrplot 
+RColorBrewer 
+openxlsx 
+readxl 
+gridExtra 
+ggfortify 
+data.table 
+dbplyr 
+RSQLite 
+BiocManager 
 ```
 
 # Rstudio for DAKI-specific use
@@ -67,9 +67,9 @@ rocker/tidyverse:4.0.0
 
 This container also comes with shiny server and the [large number pre-installed packages](#https://github.com/CSCfi/rstudio-daki/blob/master/rstudio-daki-shiny/install_daki.sh) including the following package manages:
 ```
-    BiocManager 
-    devtools 
-    remotes
+BiocManager 
+devtools 
+remotes
 ```
 In order to facilitate open reserach data analytics activties, rstudio-daki has beeen installed with many [openscience dataset and scripts](#https://github.com/CSCfi/Open-data-examples) and also includes some of potentially useful open science datasets as archived by [rOpenGov](#https://github.com/rOpenGov?page=1). These packages include:
 ```
@@ -84,7 +84,7 @@ helsinki
 openthl
 geofi
 ```
-Special thanks to rOpenGov and people behind it for providing analytcis tools and datasets in the form of R packages.
+Special thanks to rOpenGov and people behind it for providing analytics tools and datasets in the form of R packages.
 
 # Automate Deployment with Webhook triggers
 
