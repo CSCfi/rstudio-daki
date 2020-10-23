@@ -65,7 +65,7 @@ RStudio-daki is customised towards data analysis needs of DAKI project. Base ima
 rocker/tidyverse:4.0.0
 ```
 
-This container also comes with shiny server and the [large number pre-installed packages](https://github.com/CSCfi/rstudio-daki/blob/master/rstudio-daki-shiny/install_daki.sh) including the following rstudio package managers:
+This container also comes with shiny server and the [large number of pre-installed packages](https://github.com/CSCfi/rstudio-daki/blob/master/rstudio-daki-shiny/install_daki.sh) including the following rstudio package managers:
 ```
 BiocManager 
 devtools 
