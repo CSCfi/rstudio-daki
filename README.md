@@ -1,5 +1,5 @@
 
-<img src="./landing_pic.png" width="80%">
+<img src="./landing_pics.png" width="110%">
 
 
 # Rstudio-daki tools (Work in progress)
