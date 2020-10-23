@@ -10,6 +10,7 @@ RStudio-daki tools are customised instances of rstudio, which is an integrated d
 - [Rstudio for basic learning environment](#Rstudio-for-basic-learning-environment) 
 - [Rstudio for DAKI-specific use](#Rstudio-for-DAKI-specific-use)
 - [Deployment of a pre-made rstudio image onto notebooks environment](#Deployment-of-Rstudio-image-onto-notebooks-environment)
+- [Automate Deployment with Webhook triggers (WIP)](#Automate-Deployment-with-Webhook-triggers)
 - [Useful CSC resources](#useful-CSC-resources)
 - [Funding](#Funding)
 
@@ -59,19 +60,19 @@ Please use *rstudio-daki-shiny-template.yaml* file to deploy rstudio-daki on Rah
 
 ### Contents of RStudio-daki:
 
-This RStudio is customised towards data analysis needs of DAKI project. Base image was built from rocker latest image:
+RStudio-daki is customised towards data analysis needs of DAKI project. Base image was built from rocker latest image:
 ```
 rocker/tidyverse:4.0.0
 ```
 
-This container also comes with shiny server and the (large number pre-installed packages)(#https://github.com/CSCfi/rstudio-daki/blob/master/rstudio-daki-shiny/install_daki.sh) including the following package manages:
+This container also comes with shiny server and the [large number pre-installed packages](#https://github.com/CSCfi/rstudio-daki/blob/master/rstudio-daki-shiny/install_daki.sh) including the following package manages:
 ```
     BiocManager 
     devtools 
     remotes
 ```
-In order to facilitate open reserach data analytics activties, rstudio-daki has beeen installed with many [openscience dataset and scripts](#https://github.com/CSCfi/Open-data-examples) and also includes some of potentially useful open science datasets as archived by rOpenGov (https://github.com/rOpenGov?page=1). The include
-```s
+In order to facilitate open reserach data analytics activties, rstudio-daki has beeen installed with many [openscience dataset and scripts](#https://github.com/CSCfi/Open-data-examples) and also includes some of potentially useful open science datasets as archived by [rOpenGov](#https://github.com/rOpenGov?page=1). These packages include:
+```
 vipunen
 fmi2
 hetu
@@ -83,7 +84,15 @@ helsinki
 openthl
 geofi
 ```
-Special thanks to rOpenGov for providing tools and datasets for mining with R.
+Special thanks to rOpenGov and people behind it for providing analytcis tools and datasets in the form of R packages.
+
+# Automate Deployment with Webhook triggers
+
+Once we make a commit to the master branch of rstudio-daki, buildconfig is triggered and pulls the master branch automatically, shuts down the server and restarts it with your new commit.
+One has to configure webhooks endpoint URl in the github
+
+Webhook triggers allow you to trigger a new build by sending a request to the OpenShift Container Platform API endpoint. You can define these triggers using GitHub. OpenShift Container Platform webhooks only support the analogous versions of the push event for each of the Git-based source code management systems.
+
 
 # Deployment of Rstudio image onto notebooks environment
 
