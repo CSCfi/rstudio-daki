@@ -65,13 +65,13 @@ RStudio-daki is customised towards data analysis needs of DAKI project. Base ima
 rocker/tidyverse:4.0.0
 ```
 
-This container also comes with shiny server and the [large number pre-installed packages](#https://github.com/CSCfi/rstudio-daki/blob/master/rstudio-daki-shiny/install_daki.sh) including the following package manages:
+This container also comes with shiny server and the [large number pre-installed packages](https://github.com/CSCfi/rstudio-daki/blob/master/rstudio-daki-shiny/install_daki.sh) including the following rstudio package managers:
 ```
 BiocManager 
 devtools 
 remotes
 ```
-In order to facilitate open reserach data analytics activties, rstudio-daki has beeen installed with many [openscience dataset and scripts](https://github.com/CSCfi/Open-data-examples) and also includes some of potentially useful open science datasets as archived by[rOpenGov](https://github.com/rOpenGov?page=1). These packages include:
+In order to facilitate open reserach data analytics activties, rstudio-daki has beeen installed with many [openscience datasets and scripts](https://github.com/CSCfi/Open-data-examples) and also includes some of potentially useful open science datasets and mining tools as archived by [rOpenGov](https://github.com/rOpenGov?page=1). These packages include:
 ```
 vipunen
 fmi2
