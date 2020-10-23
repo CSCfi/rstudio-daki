@@ -10,7 +10,7 @@ RStudio-daki tools are customised instances of rstudio, which is an integrated d
 - [Rstudio for basic learning environment](#Rstudio-for-basic-learning-environment) 
 - [Rstudio for DAKI-specific use](#Rstudio-for-DAKI-specific-use)
 - [Deployment of a pre-made rstudio image onto notebooks environment](#Deployment-of-Rstudio-image-onto-notebooks-environment)
-- [Automate Deployment with Webhook triggers (WIP)](#Automate-Deployment-with-Webhook-triggers)
+- [Automate deployment with webhook triggers (WIP)](#Automate-Deployment-with-Webhook-triggers)
 - [Useful CSC resources](#useful-CSC-resources)
 - [Funding](#Funding)
 
