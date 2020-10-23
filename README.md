@@ -71,7 +71,7 @@ BiocManager
 devtools 
 remotes
 ```
-In order to facilitate open reserach data analytics activties, rstudio-daki has beeen installed with many [openscience datasets and scripts](https://github.com/CSCfi/Open-data-examples) and also includes some of potentially useful open science datasets and mining tools as archived by [rOpenGov](https://github.com/rOpenGov?page=1). These packages include:
+In order to facilitate data analytics activties on public data sets, rstudio-daki has beeen installed with many [openscience datasets and scripts](https://github.com/CSCfi/Open-data-examples) including some of potentially useful open science datasets and mining tools as compiled by [rOpenGov](https://github.com/rOpenGov?page=1). These packages include:
 ```
 vipunen
 fmi2
