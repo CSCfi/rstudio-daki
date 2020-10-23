@@ -1,7 +1,7 @@
 
 # Rstudio-daki tools 
 
-Rstudio-daki repository help us build a containerised Rstudio application for DAKI relavant data analytics activities as well as facilitates the deployment of the application in CSC's [Rahti container cloud](https://rahti.csc.fi/) and [notebooks environment](https://notebooks.csc.fi/). In the process of containerisation and deployment of this tools, this repository extends openshift templates developed in one of other [CSC Github repositories](https://github.com/CSCfi/rstudio-openshift). Here, custom Rstudio images are built in docker environment. 
+RStudio-daki is a customised rstudio, which is an integrated development environment (IDE) for the R programming language, for the analytics actvities of DAKI project. This repository help us build the custom Rstudio as a containerised application which can be deployed in CSC's [Rahti container cloud](https://rahti.csc.fi/) and [notebooks environment](https://notebooks.csc.fi/). In the process of containerisation and deployment of this tools, this repository made use of openshift templates developed in one of other [CSC Github repositories](https://github.com/CSCfi/rstudio-openshift). Here, Rstudio images are built in docker environment. 
 
 Current efforts towards these custom images include:
 - [Rstudio for basic learning environment](#Rstudio-for-basic-learning-environment) 
