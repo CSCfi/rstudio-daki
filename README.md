@@ -17,7 +17,7 @@ RStudio-daki tools are customised instances of rstudio, which is an integrated d
 Please note that once openshift-compatible rstudio image is built, you can proceed to deployment in notebooks environment at CSC. One way to ensure whether your custom image is compatible with openshift environment is to actually deploy the image successfully in Rahti container cloud at CSC. Please follow the instructions for [deploying a pre-made rstudio image onto notebooks environment](#Deployment-of-Rstudio-image-onto-notebooks-environment)
 
 # Rstudio for basic learning environment 
-Rstudio dockerfile (file name: Dockerfile) for basic data analysis course (rstudio-shiny) includes the latest version of rstudio, R (v4.0.2) and basic R-packages. Other dockerfile (file name: *rstudio-rda.dockerfile*) for building  custom image (e.g., in cPouta cloud) is also available in *rstudio-shiny* folder.
+Rstudio dockerfile (file name: Dockerfile) for basic data analysis course (rstudio-shiny) includes the latest version of rstudio, R (v4.0.2) and basic R-packages. Other dockerfile (file name: *rstudio-rda.dockerfile*) for building  custom image (e.g., compatible in cPouta cloud) is also available in *rstudio-shiny* folder.
 
 ### Deploying Rstudio on Rahti *via* commandline
 Please use  *rstudio-shiny-template.yaml* template which will use *Dockerfile* available in *rstudio-shiny* folder to deploy it on Rahti container cloud in your namespace (= your project). The following openshift command can be used for the deployment of  rstudio-shiny:
@@ -31,7 +31,7 @@ This basic RStudio docker container was built from the rocker base image:
 rocker/tidyverse:4.0.2
 ```
 
-This container comes with shiny server and the number pre-installed packages as below:
+This rstudio comes with shiny server and the number of pre-installed packages as listed below:
 
 ```
 tidyverse
