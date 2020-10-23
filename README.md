@@ -18,11 +18,33 @@ Please note that once openshift-compatible rstudio image is built, you can proce
 # Rstudio for basic learning environment 
 Rstudio dockerfile (file name: Dockerfile) for basic data analysis course (rstudio-shiny) includes the latest version of rstudio, R (v4.0.2) and basic R-packages. Other dockerfile (file name: *rstudio-rda.dockerfile*) for building  custom image (e.g., in cPouta cloud) is also available in *rstudio-shiny* folder.
 
-## Deploying Rstudio on Rahti *via* commandline
+### Deploying Rstudio on Rahti *via* commandline
 Please use  *rstudio-shiny-template.yaml* template which will use *Dockerfile* available in *rstudio-shiny* folder to deploy it on Rahti container cloud in your namespace (= your project). The following openshift command can be used for the deployment of  rstudio-shiny:
 
 * *oc process -f rstudio-shiny-template.yaml -p NAME="application-name" -p USERNAME="your-username" -p PASSWORD="your-password" | oc apply -f -*
 
+### Contents of basic RStudio:
+
+This basic RStudio docker container was built from the rocker base image:
+```
+rocker/tidyverse:4.0.2
+```
+
+This container comes with shiny server and the number pre-installed packages as below:
+
+```
+    tidyverse
+    corrplot 
+    RColorBrewer 
+    openxlsx 
+    readxl 
+    gridExtra 
+    ggfortify 
+    data.table 
+    dbplyr 
+    RSQLite 
+    BiocManager 
+```
 
 # Rstudio for DAKI-specific use
 
@@ -35,6 +57,33 @@ Please use *rstudio-daki-shiny-template.yaml* file to deploy rstudio-daki on Rah
 
 * *oc process -f rstudio-daki-shiny-template.yaml -p NAME="application-name" -p USERNAME="your-username" -p PASSWORD="your-password" | oc apply -f -*
 
+### Contents of RStudio-daki:
+
+This RStudio is customised towards data analysis needs of DAKI project. Base image was built from rocker latest image:
+```
+rocker/tidyverse:4.0.0
+```
+
+This container also comes with shiny server and the (large number pre-installed packages)(#https://github.com/CSCfi/rstudio-daki/blob/master/rstudio-daki-shiny/install_daki.sh) including the following package manages:
+```
+    BiocManager 
+    devtools 
+    remotes
+```
+In order to facilitate open reserach data analytics activties, rstudio-daki has beeen installed with many [openscience dataset and scripts](#https://github.com/CSCfi/Open-data-examples) and also includes some of potentially useful open science datasets as archived by rOpenGov (https://github.com/rOpenGov?page=1). The include
+```s
+vipunen
+fmi2
+hetu
+statfi
+digitransit
+sorvi
+rqog
+helsinki
+openthl
+geofi
+```
+Special thanks to rOpenGov for providing tools and datasets for mining with R.
 
 # Deployment of Rstudio image onto notebooks environment
 
