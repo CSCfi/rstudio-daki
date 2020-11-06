@@ -87,7 +87,7 @@ Special thanks to rOpenGov and people behind it for making analytics tools and d
 
 First, navigate to [CSC Notebooks](https://notebooks.csc.fi) service using your HAKA authentication. The landing page after logging in shows a dashboard with a list of Blueprints which are ready for launching. In the list you can find a blueprint with name,  "Rstudio environment for DAKI and teaching activities". This rstudio has all required R packages.
 
-## Acessing a custome openshift rstudio application via notebooks environment
+In case you want to use a custome openshift rstudio application via notebooks environment, follow the instructions below:
 
 ### Login to CSC Notebooks to set up a group
 
@@ -95,7 +95,7 @@ if you do want a custom notebook for your openshift rstudio applications, please
 
 ### Create a new Blueprint for your rstudio application
 
-Click on the **Blueprints** tab in the top menu to access various *Templates* for creating a blueprint. You can request CSC notebooks admins to create a template (e.g., *Rahti RStudio*) to deploy your rahti rstudio. Once template is available, click **Create Blueprint** for rstudio custom notebooks. Select the group created in the *Select Group* menu. Add name and description for your Blueprint. In order to fill **Openshift template URL** field, please use image-ready openshift templates (*-imageready.yaml file) available in this GitHub repository. Please note that you have to change URLs for your custom images in image-ready openshift template before creating **Blueprints** for notebooks.
+You can request CSC notebooks admins to create a template (e.g., *Rahti RStudio*) to deploy your rahti rstudio. Once template is available, click **Create Blueprint** for rstudio custom notebooks. Select the group created in the *Select Group* menu. Add name and description for your Blueprint. In order to fill **Openshift template URL** field, please use image-ready openshift templates (*-imageready.yaml file) available in this GitHub repository. Please note that you have to change URLs for your custom images in image-ready openshift template before creating **Blueprints** for notebooks.
 
 <!---
  <img src="./Notebooks-deploy.png" width="50%">
