@@ -9,7 +9,7 @@ RStudio-daki tools are customised instances of rstudio, which is an integrated d
 # Contents
 - [Rstudio for basic learning environment](#Rstudio-for-basic-learning-environment) 
 - [Rstudio for DAKI-specific use](#Rstudio-for-DAKI-specific-use)
-- [Acessing rstudio application in CSC's notebooks environment](#Acessing-rstudio-application-in-CSC's-notebooks-environment)
+- [Acessing rstudio application in CSC's notebooks environment](#Acessing-rstudio-application-in-CSC-notebooks-environment)
 - [Useful CSC resources](#useful-CSC-resources)
 - [Funding](#Funding)
 
@@ -83,7 +83,7 @@ geofi
 ```
 Special thanks to rOpenGov and people behind it for making analytics tools and datasets available in the form of R packages.
 
-# Acessing rstudio application in CSC's notebooks environment
+# Acessing rstudio application in CSC notebooks environment
 
 First, navigate to [CSC Notebooks](https://notebooks.csc.fi) service using your HAKA authentication. The landing page after logging in shows a dashboard with a list of Blueprints which are ready for launching. In the list you can find a blueprint with name,  "Rstudio environment for DAKI and teaching activities". This rstudio has all required R packages.
 
