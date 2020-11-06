@@ -9,7 +9,7 @@ RStudio-daki tools are customised instances of rstudio, which is an integrated d
 # Contents
 - [Rstudio for basic learning environment](#Rstudio-for-basic-learning-environment) 
 - [Rstudio for DAKI-specific use](#Rstudio-for-DAKI-specific-use)
-- [Acessing openshift rstudio application via. notebooks environment](#Acessing-openshift-rstudio-application-via.-notebooks-environment)
+- [Acessing openshift rstudio application *via* notebooks environment](#Acessing-openshift-rstudio-application-via-notebooks-environment)
 - [Useful CSC resources](#useful-CSC-resources)
 - [Funding](#Funding)
 
@@ -83,7 +83,7 @@ geofi
 ```
 Special thanks to rOpenGov and people behind it for making analytics tools and datasets available in the form of R packages.
 
-# Acessing openshift rstudio application via. notebooks environment
+# Acessing openshift rstudio application via notebooks environment
 
 ### Login to CSC Notebooks to set up a group
 
