@@ -85,17 +85,17 @@ Special thanks to rOpenGov and people behind it for making analytics tools and d
 
 # Acessing rstudio application in CSC notebooks environment
 
-First, navigate to [CSC Notebooks](https://notebooks.csc.fi) service using your HAKA authentication. The landing page after logging in shows a dashboard with a list of Blueprints which are ready for launching. In the list you can find a blueprint with name,  "Rstudio environment for DAKI and teaching activities". This rstudio has all required R packages.
+First, navigate to [CSC Notebooks](https://notebooks.csc.fi) service using your HAKA authentication. The landing page after logging in shows a dashboard with a list of Blueprints which are ready for launching. You can launch a blueprint with name,  "Rstudio environment for DAKI and teaching activities" from the list. This rstudio has all required R packages.
 
-In case you want to use a custome openshift rstudio application via notebooks environment, follow the instructions below:
+In case you want to use a custom openshift rstudio application via notebooks environment, follow the instructions below:
 
 ### Login to CSC Notebooks to set up a group
 
-if you do want a custom notebook for your openshift rstudio applications, please request CSC  for administrator rights (aka, [group ownership rights](http://cscfi.github.io/pebbles/group_owners_guide.html)) for using CSC Notebooks. Once you have admin rights in place, you can see **Groups** and **Blueprints** in the menu on the top of the page. You can click on the **Groups** tab and then on  **Create a New Group** tab to create a group for your notebook.
+if you want a custom notebook for your openshift rstudio applications, please request CSC  for administrator rights (aka, [group ownership rights](http://cscfi.github.io/pebbles/group_owners_guide.html)) for using CSC Notebooks. Once you have admin rights in place, you can see **Groups** and **Blueprints** in the menu on the top of the page. You can click on the **Groups** tab and then on  **Create a New Group** tab to create a group for your notebook.
 
 ### Create a new Blueprint for your rstudio application
 
-You can request CSC notebooks admins to create a template (e.g., *Rahti RStudio*) to deploy your rahti rstudio. Once template is available, click **Create Blueprint** for rstudio custom notebooks. Select the group created in the *Select Group* menu. Add name and description for your Blueprint. In order to fill **Openshift template URL** field, please use image-ready openshift templates (*-imageready.yaml file) available in this GitHub repository. Please note that you have to change URLs for your custom images in image-ready openshift template before creating **Blueprints** for notebooks.
+You can request CSC notebooks admins to create a template (e.g., *Rahti RStudio*) to deploy your rahti rstudio. Once template is available, click **Create Blueprint** for rstudio custom notebooks. In that template, select the group created in the *Select Group* menu. Add name and description for your Blueprint. In order to fill **Openshift template URL** field, please use image-ready openshift templates (*-imageready.yaml file) available in this GitHub repository. Please note that you have to change URLs for your custom images in image-ready openshift template before creating **Blueprints** for notebooks.
 
 <!---
  <img src="./Notebooks-deploy.png" width="50%">
