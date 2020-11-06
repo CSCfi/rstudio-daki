@@ -97,7 +97,9 @@ if you do want a custom notebook for your openshift rstudio applications, please
 
 Click on the **Blueprints** tab in the top menu to access various *Templates* for creating a Blueprint. Choose a template with name *Rahti RStudio* and click **Create Blueprint** for rstudio custom notebooks. The template is shown in picture below for clarity. Select the group created in the *Select Group* menu. Add name and description for your Blueprint. In order to fill **Openshift template URL** field, please use image-ready openshift templates (*-imageready.yaml file) available in this GitHub repository. Please note that you have to change URLs for your custom images in image-ready openshift template before creating **Blueprints** for notebooks.
 
-[//]: <>  <img src="./Notebooks-deploy.png" width="50%">
+<!---
+ <img src="./Notebooks-deploy.png" width="50%">
+--->
 
 # Useful CSC resources
 - [Apply for a new CSC project](https://my.csc.fi/)
