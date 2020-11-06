@@ -2,19 +2,16 @@
 <img src="./landing_pics.png" width="110%">
 
 
-# Rstudio-daki tools (Work in progress)
+# Rstudio-daki tools
 
-RStudio-daki tools are customised instances of rstudio, which is an integrated development environment (IDE) for R programming language, for analytics actvities of DAKI project. This repository helps us build a custom Rstudio as a containerised application which can then be deployed in CSC's [Rahti container cloud](https://rahti.csc.fi/) and [notebooks environment](https://notebooks.csc.fi/). In the process of containerisation and deployment of these tools, this repository made use of openshift templates developed in one of other [CSC Github repositories](https://github.com/CSCfi/rstudio-openshift). Here, Rstudio images are built in docker environment. 
+RStudio-daki tools are customised instances of rstudio, which is an integrated development environment (IDE) for R programming language, for analytics actvities of DAKI project. This repository helps us build a custom Rstudio as a containerised application which can then be deployed in CSC's [Rahti container cloud](https://rahti.csc.fi/) and can be accessed *via.* [notebooks environment](https://notebooks.csc.fi/). In the process of containerisation and deployment of these tools, this repository made use of openshift templates developed in one of other [CSC Github repositories](https://github.com/CSCfi/rstudio-openshift). Here, Rstudio images are built in docker environment. 
 
 # Contents
 - [Rstudio for basic learning environment](#Rstudio-for-basic-learning-environment) 
 - [Rstudio for DAKI-specific use](#Rstudio-for-DAKI-specific-use)
 - [Deployment of a pre-made rstudio image onto notebooks environment](#Deployment-of-Rstudio-image-onto-notebooks-environment)
-- [Automate deployment with webhook triggers (WIP)](#Automate-Deployment-with-Webhook-triggers)
 - [Useful CSC resources](#useful-CSC-resources)
 - [Funding](#Funding)
-
-Please note that once openshift-compatible rstudio image is built, you can proceed to deployment in notebooks environment at CSC. One way to ensure whether your custom image is compatible with openshift environment is to actually deploy the image successfully in Rahti container cloud at CSC. Please follow the instructions for [deploying a pre-made rstudio image onto notebooks environment](#Deployment-of-Rstudio-image-onto-notebooks-environment)
 
 # Rstudio for basic learning environment 
 Rstudio dockerfile (file name: Dockerfile) for basic data analysis course (rstudio-shiny) includes the latest version of rstudio, R (v4.0.2) and basic R-packages. Other dockerfile (file name: *rstudio-rda.dockerfile*) for building  custom image (e.g., compatible in cPouta cloud) is also available in *rstudio-shiny* folder.
