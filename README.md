@@ -9,7 +9,7 @@ RStudio-daki tools are customised instances of rstudio, which is an integrated d
 # Contents
 - [Rstudio for basic learning environment](#Rstudio-for-basic-learning-environment) 
 - [Rstudio for DAKI-specific use](#Rstudio-for-DAKI-specific-use)
-- [Deployment of a pre-made rstudio image onto notebooks environment](#Deployment-of-Rstudio-image-onto-notebooks-environment)
+- [Acessing openshift rstudio application via. notebooks environment](#Acessing-openshift-rstudio-application-via.-notebooks-environment)
 - [Useful CSC resources](#useful-CSC-resources)
 - [Funding](#Funding)
 
@@ -83,15 +83,7 @@ geofi
 ```
 Special thanks to rOpenGov and people behind it for making analytics tools and datasets available in the form of R packages.
 
-# Automate Deployment with Webhook triggers
-
-Once we make a commit to the master branch of rstudio-daki, buildconfig is triggered and pulls the master branch automatically, shuts down the server and restarts it with your new commit.
-One has to configure webhooks endpoint URl in the github
-
-Webhook triggers allow you to trigger a new build by sending a request to the OpenShift Container Platform API endpoint. You can define these triggers using GitHub. OpenShift Container Platform webhooks only support the analogous versions of the push event for each of the Git-based source code management systems.
-
-
-# Deployment of Rstudio image onto notebooks environment
+# Acessing openshift rstudio application via. notebooks environment
 
 ### Login to CSC Notebooks to set up a group
 
