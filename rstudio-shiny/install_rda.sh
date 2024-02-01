@@ -1,3 +1,4 @@
+# Adapted from the Rocker-versioned2 repository : https://github.com/nturaga/rocker-versioned2/blob/56a5190414c093053329c8b05aff9772421b0ff8/scripts/install_geospatial.sh
 #!/bin/bash
 
 set -e
